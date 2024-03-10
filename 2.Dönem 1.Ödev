@@ -1,0 +1,17 @@
+1.Ünite Özet
+ İşletmelerin bilgiye duyduğu ihtiyaç ve bu ihtiyacı karşılamak için bilgi sistemlerinin önemi üzerinde duruluyor. Bilgi sistemlerinin temel bileşenleri ve işlevleri anlatılırken, veritabanı sistemlerinin tarihçesi ve gelişimi de detaylı bir şekilde ele alınıyor. Başlangıçta fiziksel dosyaların kullanıldığı veri depolama yöntemlerinden günümüzdeki karmaşık bilgisayar tabanlı veritabanı sistemlerine kadar olan evrim anlatılıyor. Bu süreçte öne çıkan önemli gelişmeler ve teknolojiler belirtiliyor. Veritabanı kavramı ve temel özellikleri üzerinde de duruluyor.
+Geleneksel dosya sistemleri veri tekrarı, tutarsızlığı, paylaşım eksikliği gibi sorunlara yol açarken, veritabanı yönetim sistemleri bu sorunları önler ve birçok avantaj sağlar. VTYS’ler, veri güvenliği, paylaşım kolaylığı, standart yapı ve kurallar gibi alanlarda üstünlük sağlarken, maliyet açısından dezavantajlıdır. Ancak, basit ve iyi tanımlanmış uygulamalarda geleneksel dosya sistemleri tercih edilebilir.
+Veritabanı kullanıcıları, veritabanıyla etkileşimde olan kişilerdir. Bunlar, veritabanı sorumluları (yönetici ve tasarımcı), son kullanıcılar (standart, sıradan/parametrik, gelişmiş, bağımsız), ve sistem analistleri ile uygulama programcılarıdır. Her biri farklı roller ve yetkilerle belirlenir ve farklı ihtiyaçlara sahiptir.
+Veritabanı Yönetim Sistemleri, istemci/sunucu mimarisiyle veri depolama ve erişimini sağlar. Veri modelleri, veritabanlarının mantıksal yapısını tanımlar. Üç şema mimarisi, fiziksel, kavramsal ve dışsal düzeylerde veritabanını tanımlar. Veri tanımlama dili, veri işleme dili ve sorgulama dili, veritabanı işlemleri için kullanılır. VTYS’nin bileşenleri arasında yöneticiler, sorgu işleyicileri ve depolama yöneticileri bulunur.
+
+Veritabanı türleri dört ana kategoride incelenir: hiyerarşik, ağ, ilişkisel ve nesneye yönelik. Yaygın veritabanı yönetim sistemleri arasında MS SQL Server, Oracle, MySQL, Sybase, MS Access, PostgreSQL ve IBM DB2 bulunur.
+
+Bire bir örnek:
+Bir kullanıcı bir kitaba yalnızca bir yorum yapabilir.
+Bire çok örnek:
+Bir kategoride birden fazla ürün olabilir, ancak her ürün sadece bir kategoriye ait olabilir.
+Çoka çok örnek:
+Bir kullanıcı birden fazla kitaba sahip olabilir ve bir kitap da birden fazla kullanıcıya ait olabilir.
+
+
+
