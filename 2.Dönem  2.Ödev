@@ -1,0 +1,70 @@
+CREATE TABLE Uyeler (
+    uye_id INT PRIMARY KEY,
+    uye_ad VARCHAR(255),
+    uye_email VARCHAR(255),
+    uye_telefon VARCHAR(20),
+    adres_id INT,
+    FOREIGN KEY (adres_id) REFERENCES Adresler(adres_id)
+);
+
+CREATE TABLE Adresler (
+    adres_id INT PRIMARY KEY,
+    cadde_sokak VARCHAR(255),
+    sehir VARCHAR(100),
+    ulke VARCHAR(100),
+    posta_kodu VARCHAR(20)
+);
+
+CREATE TABLE Kitaplar (
+    kitap_id INT PRIMARY KEY,
+    kitap_ad VARCHAR(255),
+    yazar_id INT,
+    yayinevi_id INT,
+    tur_id INT,
+    FOREIGN KEY (yazar_id) REFERENCES Yazarlar(yazar_id),
+    FOREIGN KEY (yayinevi_id) REFERENCES Yayinevleri(yayinevi_id),
+    FOREIGN KEY (tur_id) REFERENCES Turler(tur_id)
+);
+
+CREATE TABLE Kutuphane (
+    kutuphane_id INT PRIMARY KEY,
+    kutuphane_ad VARCHAR(255),
+    konum VARCHAR(255)
+);
+
+CREATE TABLE Emanetler (
+    emanet_id INT PRIMARY KEY,
+    uye_id INT,
+    kitap_id INT,
+    emanet_tarihi DATE,
+    iade_tarihi DATE,
+    FOREIGN KEY (uye_id) REFERENCES Uyeler(uye_id),
+    FOREIGN KEY (kitap_id) REFERENCES Kitaplar(kitap_id)
+);
+
+CREATE TABLE Yazarlar (
+    yazar_id INT PRIMARY KEY,
+    yazar_ad VARCHAR(255)
+);
+
+CREATE TABLE Turler (
+    tur_id INT PRIMARY KEY,
+    tur_ad VARCHAR(255)
+);
+
+CREATE TABLE Yayinevleri (
+    yayinevi_id INT PRIMARY KEY,
+    yayinevi_ad VARCHAR(255)
+);
+
+CREATE TABLE Kitap_Kopyalari (
+    kopya_id INT PRIMARY KEY,
+    kitap_id INT,
+    kullanilabilirlik BOOLEAN,
+    FOREIGN KEY (kitap_id) REFERENCES Kitaplar(kitap_id)
+);
+
+CREATE TABLE Kategoriler (
+    kategori_id INT PRIMARY KEY,
+    kategori_ad VARCHAR(255)
+);
